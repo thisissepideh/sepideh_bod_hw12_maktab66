@@ -1,0 +1,8 @@
+@import "mixin";
+@import "variables";
+.q3-class {
+    background-color: rgb(106, 0, 255);
+    text-align: center;
+    font-size: larger;
+    @include question3($x, $y);
+}
