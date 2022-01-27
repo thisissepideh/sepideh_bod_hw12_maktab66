@@ -9,10 +9,22 @@ let span = document.getElementsByClassName("close")[0];
 
 const validFirstName = document.getElementById("validationFirstName")
 const validLastName = document.getElementById("validationLastName")
-    // When the user clicks the button, open the modal 
+const firstName = document.getElementById("first-name");
+const lastName = document.getElementById("last-name");
+// When the user clicks the button, open the modal 
+
 btn.onclick = function() {
 
+    function callback() {
+        modal.style.display = "none"
+    }
+
+
     modal.style.display = "block"
+    setTimeout(e => {
+        callback()
+    }, 8000);
+
 
 
 }
